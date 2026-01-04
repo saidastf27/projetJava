@@ -1,0 +1,765 @@
+/* =========================
+   THEME PRO FINAL (CLEAN + PRO)
+   White / Dark Green Gradient / #3CA34C
+   - Big "Bienvenue" only
+   - Global text professional
+   - Dropdown readable (black on white)
+   ========================= */
+
+/* ---------- Root ---------- */
+.root {
+    -fx-font-family: "Segoe UI", "Inter", Arial, sans-serif;
+    -fx-font-size: 14px;
+
+    -fx-base: #ffffff;
+    -fx-background-color: #f7faf7;
+    -fx-control-inner-background: #ffffff;
+
+    -fx-text-fill: #0b1220;
+
+    -fx-accent: #3CA34C;
+    -fx-focus-color: #3CA34C;
+    -fx-faint-focus-color: rgba(60,163,76,0.18);
+}
+
+/* ---------- Containers ---------- */
+.border-pane, .vbox, .hbox, .stack-pane, .anchor-pane, .pane {
+    -fx-background-color: transparent;
+}
+
+/* =========================
+   TYPOGRAPHY (PRO)
+   ========================= */
+.label {
+    -fx-text-fill: #0b1220;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+}
+
+/* ✅ MAIN WELCOME TITLE */
+.label.welcome-title {
+    -fx-font-size: 34px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #0b1220;
+}
+
+/* Page title / section titles */
+.page-title {
+    -fx-font-size: 19px;
+    -fx-font-weight: 900;
+}
+
+.search-label {
+    -fx-font-size: 15px;
+    -fx-font-weight: 800;
+    -fx-padding: 10 0 0 0;
+}
+
+/* Smaller section titles */
+.label.section-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: 800;
+}
+
+/* Muted/secondary */
+.label.muted {
+    -fx-text-fill: #667085;
+    -fx-font-weight: 600;
+}
+
+/* =========================
+   BUTTONS (GREEN DEFAULT)
+   ========================= */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #3CA34C, #2E7D43);
+    -fx-text-fill: white;
+
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+
+    -fx-font-weight: 800;
+    -fx-font-size: 13px;
+
+    -fx-padding: 9 16;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #4BC45F, #3CA34C);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2E7D43, #256A39);
+}
+
+/* =========================
+   LOGOUT BUTTON (RED)
+   ========================= */
+.button.logout-button,
+.button.mc-style-10 {
+    -fx-background-color: linear-gradient(to bottom, #e53935, #b71c1c);
+    -fx-text-fill: white;
+    -fx-font-weight: 900;
+    -fx-font-size: 13px;
+}
+
+.button.logout-button:hover,
+.button.mc-style-10:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff5252, #c62828);
+    -fx-cursor: hand;
+}
+
+/* =========================
+   INPUTS
+   ========================= */
+.text-field, .password-field, .text-area, .combo-box, .date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #d0d5dd;
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-min-height: 42px;
+
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+
+    -fx-padding: 9 12;
+}
+
+.text-field:focused,
+.password-field:focused,
+.text-area:focused,
+.combo-box:focused,
+.date-picker:focused {
+    -fx-border-color: #3CA34C;
+    -fx-border-width: 2;
+}
+
+.combo-box {
+    -fx-padding: 0 10 0 10;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+.mc-navbar {
+    -fx-background-color: linear-gradient(to bottom, #2E7D43, #256A39);
+    -fx-padding: 8 16;
+}
+
+/* =========================
+   MENU AS BUTTON
+   ========================= */
+.menu-bar {
+    -fx-background-color: transparent;
+}
+
+/* Menu "bouton" vert */
+.menu-bar .menu.menu-button {
+    -fx-background-color: linear-gradient(to bottom, #3CA34C, #2E7D43);
+    -fx-background-radius: 14;
+    -fx-padding: 6 16;
+}
+
+.menu-bar .menu.menu-button .label {
+    -fx-text-fill: white;
+    -fx-font-weight: 900;
+    -fx-font-size: 13px;
+}
+
+.menu-bar .menu.menu-button:hover,
+.menu-bar .menu.menu-button:showing {
+    -fx-background-color: linear-gradient(to bottom, #4BC45F, #3CA34C);
+}
+
+/* =========================
+   DROPDOWN MENU ITEMS (FIX)
+   Fond BLANC + texte NOIR
+   ========================= */
+.menu-bar .context-menu {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 1;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 6;
+}
+
+.menu-bar .context-menu .menu-item {
+    -fx-background-color: transparent;
+    -fx-padding: 8 14;
+}
+
+.menu-bar .context-menu .menu-item .label {
+    -fx-text-fill: #111111;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+}
+
+.menu-bar .context-menu .menu-item:hover,
+.menu-bar .context-menu .menu-item:focused {
+    -fx-background-color: rgba(60,163,76,0.15);
+}
+
+.menu-bar .context-menu .menu-item:hover .label,
+.menu-bar .context-menu .menu-item:focused .label {
+    -fx-text-fill: #111111;
+}
+
+/* =========================
+   HEADER / CARDS
+   ========================= */
+.header-box {
+    -fx-background-color: linear-gradient(to bottom, rgba(60,163,76,0.16), rgba(60,163,76,0.06));
+    -fx-background-radius: 16;
+    -fx-padding: 16;
+}
+
+.card {
+    -fx-background-color: white;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1;
+    -fx-background-radius: 16;
+    -fx-padding: 16;
+}
+
+/* =========================
+   TABPANE
+   ========================= */
+.tab-pane .tab {
+    -fx-background-color: #eef2ee;
+    -fx-background-radius: 14 14 0 0;
+    -fx-border-radius: 14 14 0 0;
+    -fx-padding: 8 14;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: linear-gradient(to bottom, #3CA34C, #2E7D43);
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: white;
+    -fx-font-weight: 900;
+    -fx-font-size: 13px;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #0b1220;
+    -fx-font-weight: 800;
+    -fx-font-size: 13px;
+}
+
+/* =========================
+   TABLEVIEW
+   ========================= */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 16;
+    -fx-font-size: 13px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #6fd18a, #3CA34C);
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #0b1220;
+    -fx-font-weight: 800;
+    -fx-font-size: 13px;
+}
+
+.table-cell {
+    -fx-padding: 8 10;
+}
+
+/* =========================
+   SCROLLBARS
+   ========================= */
+.scroll-bar .thumb {
+    -fx-background-color: linear-gradient(to bottom, #3CA34C, #2E7D43);
+    -fx-background-radius: 999;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+/* =========================
+   DIALOGS
+   ========================= */
+.dialog-pane {
+    -fx-background-color: white;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: linear-gradient(to bottom, #2E7D43, #256A39);
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-weight: 900;
+}
+
+/* =========================
+   STATUS PILLS
+   ========================= */
+.status-ok {
+    -fx-background-color: rgba(60,163,76,0.20);
+    -fx-text-fill: #145a22;
+    -fx-padding: 6 12;
+    -fx-background-radius: 999;
+    -fx-font-weight: 900;
+}
+
+.status-warn {
+    -fx-background-color: #fff3cd;
+    -fx-text-fill: #856404;
+    -fx-padding: 6 12;
+    -fx-background-radius: 999;
+    -fx-font-weight: 900;
+}
+
+.status-bad {
+    -fx-background-color: #f8d7da;
+    -fx-text-fill: #721c24;
+    -fx-padding: 6 12;
+    -fx-background-radius: 999;
+    -fx-font-weight: 900;
+}
+
+.status-info {
+    -fx-background-color: #d1ecf1;
+    -fx-text-fill: #0c5460;
+    -fx-padding: 6 12;
+    -fx-background-radius: 999;
+    -fx-font-weight: 900;
+}
+
+/* =========================
+   ENTREPRISE ACTION BUTTONS
+   (Secondary green palette)
+   ========================= */
+.button.btn-secondary {
+    -fx-background-color: linear-gradient(to bottom, #005614, #00220a);
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: 800;
+    -fx-font-size: 13px;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+}
+
+.button.btn-secondary:hover {
+    -fx-background-color: linear-gradient(to bottom, #0a6b1d, #00310f);
+}
+
+.button.btn-secondary-strong {
+    -fx-background-color: linear-gradient(to bottom, #005614, #00220a);
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: 900;
+    -fx-font-size: 13px;
+    -fx-padding: 10 20;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+}
+
+.button.btn-secondary-strong:hover {
+    -fx-background-color: linear-gradient(to bottom, #0a6b1d, #00310f);
+}
+/* =================================================
+   ADMIN – GESTION DES UTILISATEURS
+   showGestionUtilisateurs()
+   ================================================= */
+
+/* ===== Fenêtre / conteneur ===== */
+.gestion-users-root {
+    -fx-background-color: #f7faf7;
+}
+
+/* ===== Titre ===== */
+.label.mc-style-22 {
+    -fx-font-size: 22px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #0b1220;
+    -fx-padding: 0 0 10 0;
+}
+
+/* ===== Table utilisateurs ===== */
+.table-view.gestion-users-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-font-size: 13px;
+}
+
+/* Header table */
+.table-view.gestion-users-table .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #6fd18a, #3CA34C);
+    -fx-background-radius: 16 16 0 0;
+}
+
+.table-view.gestion-users-table .column-header .label {
+    -fx-text-fill: #0b1220;
+    -fx-font-weight: 800;
+    -fx-font-size: 13px;
+}
+
+/* Lignes */
+.table-view.gestion-users-table .table-row-cell:odd {
+    -fx-background-color: #fbfdfb;
+}
+
+.table-view.gestion-users-table .table-row-cell:hover {
+    -fx-background-color: rgba(60,163,76,0.08);
+}
+
+.table-view.gestion-users-table .table-row-cell:selected {
+    -fx-background-color: rgba(60,163,76,0.20);
+}
+
+/* Cellules */
+.table-view.gestion-users-table .table-cell {
+    -fx-padding: 8 10;
+    -fx-text-fill: #0b1220;
+    -fx-font-weight: 600;
+}
+
+/* ===== Bouton dans la table (Télécharger CV) ===== */
+.button.mc-style-04 {
+    -fx-background-color: linear-gradient(to bottom, #005614, #00220a);
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: 900;
+    -fx-font-size: 12px;
+    -fx-padding: 6 12;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+}
+
+.button.mc-style-04:hover {
+    -fx-background-color: linear-gradient(to bottom, #0a6b1d, #00310f);
+}
+
+/* ===== Barre des boutons en bas ===== */
+.gestion-users-actions {
+    -fx-padding: 12 0 0 0;
+    -fx-alignment: center-right;
+    -fx-spacing: 10;
+}
+
+/* Boutons admin (Activer, Modifier, Détails, Actualiser) */
+.gestion-users-actions .button {
+    -fx-font-size: 13px;
+    -fx-font-weight: 800;
+    -fx-padding: 8 14;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+}
+
+/* Bouton Actualiser (plus doux) */
+.gestion-users-actions .button.refresh {
+    -fx-background-color: linear-gradient(to bottom, #6fd18a, #3CA34C);
+    -fx-text-fill: #0b1220;
+}
+
+.gestion-users-actions .button.refresh:hover {
+    -fx-background-color: linear-gradient(to bottom, #86e0a0, #4BC45F);
+}
+
+/* =========================
+   DIALOG IMPROVEMENTS
+   ========================= */
+
+.mc-dialog {
+    -fx-background-color: transparent;
+}
+
+.dialog-pane {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-padding: 16;
+}
+
+.dialog-pane .content {
+    -fx-padding: 0;
+}
+
+/* Bouton outline (Cancel) */
+.button.btn-outline {
+    -fx-background-color: transparent;
+    -fx-text-fill: #0b1220;
+    -fx-border-color: rgba(11,18,32,0.22);
+    -fx-border-width: 1.4;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-font-weight: 900;
+}
+
+.button.btn-outline:hover {
+    -fx-background-color: rgba(60,163,76,0.10);
+    -fx-border-color: rgba(60,163,76,0.55);
+}
+/* Soft green button (secondary action) */
+.button.btn-green-soft {
+    -fx-background-color: linear-gradient(to bottom, #6fbf8a, #4ea36a);
+    -fx-text-fill: white;
+    -fx-font-weight: 900;
+}
+.button.btn-green-soft:hover {
+    -fx-background-color: linear-gradient(to bottom, #7fd19b, #5bb87c);
+}
+
+/* Strong green button (main action) */
+.button.btn-green-strong {
+    -fx-background-color: linear-gradient(to bottom, #2f9e44, #237a33);
+    -fx-text-fill: white;
+    -fx-font-weight: 900;
+}
+.button.btn-green-strong:hover {
+    -fx-background-color: linear-gradient(to bottom, #37b24d, #2f9e44);
+}
+
+/* Outline button (Cancel) */
+.button.btn-outline {
+    -fx-background-color: transparent;
+    -fx-text-fill: #0b1220;
+    -fx-border-color: rgba(11,18,32,0.22);
+    -fx-border-width: 1.4;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-font-weight: 900;
+}
+.button.btn-outline:hover {
+    -fx-background-color: rgba(60,163,76,0.10);
+    -fx-border-color: rgba(60,163,76,0.55);
+}
+/* =========================================================
+   SEARCH DIALOG - UI PRO (à ajouter dans MainController.css)
+   Compatible avec ton thème vert (#3CA34C)
+   ========================================================= */
+
+/* ----- Dialog pane general ----- */
+.dialog-pane {
+    -fx-background-color: #ffffff;
+    -fx-padding: 12;
+}
+
+.dialog-pane .content {
+    -fx-background-color: transparent;
+}
+
+/* Header panel of dialog (si jamais utilisé) */
+.dialog-pane .header-panel {
+    -fx-background-color: linear-gradient(to bottom, rgba(60,163,76,0.16), rgba(60,163,76,0.06));
+    -fx-padding: 14;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #0b1220;
+    -fx-font-weight: 900;
+}
+
+/* Buttons in dialog */
+.dialog-pane .button-bar .button {
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-font-weight: 800;
+}
+
+/* ----- Card / Header-box used in dialog ----- */
+.card {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-padding: 16;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 14, 0, 0, 5);
+}
+
+.header-box {
+    -fx-background-color: linear-gradient(to bottom, rgba(60,163,76,0.16), rgba(60,163,76,0.06));
+    -fx-border-color: rgba(60,163,76,0.20);
+    -fx-border-width: 1;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-padding: 14;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.07), 12, 0, 0, 4);
+}
+
+/* ----- Typography helpers ----- */
+.page-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #0b1220;
+}
+
+.muted {
+    -fx-text-fill: #667085;
+    -fx-font-weight: 650;
+    -fx-font-size: 13px;
+}
+
+/* ----- Chip style (type + count) ----- */
+.chip {
+    -fx-background-color: rgba(60,163,76,0.18);
+    -fx-text-fill: #145a22;
+    -fx-padding: 5 12;
+    -fx-background-radius: 999;
+    -fx-border-radius: 999;
+    -fx-border-color: rgba(60,163,76,0.45);
+    -fx-border-width: 1;
+    -fx-font-weight: 900;
+    -fx-font-size: 12px;
+}
+
+/* ----- ScrollPane (dialog content) ----- */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .corner {
+    -fx-background-color: transparent;
+}
+
+/* Scrollbar thumb with green gradient */
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: linear-gradient(to bottom, #3CA34C, #2E7D43);
+    -fx-background-radius: 999;
+}
+
+.scroll-bar:vertical .track,
+.scroll-bar:horizontal .track {
+    -fx-background-color: transparent;
+}
+
+/* ----- TableView inside dialog ----- */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-font-size: 13px;
+}
+
+/* Header background (lighter green) */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #6fd18a, #3CA34C);
+    -fx-background-radius: 16 16 0 0;
+}
+
+/* Column titles BLACK */
+.table-view .column-header .label {
+    -fx-text-fill: #0b1220;
+    -fx-font-weight: 900;
+    -fx-font-size: 13px;
+}
+
+/* Rows */
+.table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-border-color: transparent transparent #f1f5f9 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #fbfdfb;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: rgba(60,163,76,0.08);
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgba(60,163,76,0.22);
+}
+
+.table-cell {
+    -fx-text-fill: #0b1220;
+    -fx-font-weight: 650;
+    -fx-padding: 8 10;
+}
+
+/* Placeholder text (Aucun résultat...) */
+.table-view .placeholder .label {
+    -fx-text-fill: #667085;
+    -fx-font-weight: 700;
+    -fx-font-size: 13px;
+}
+/* =========================
+   REPORTS DASHBOARD (ADMIN)
+   ========================= */
+
+.report-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: 900;
+}
+
+.report-section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: 900;
+}
+
+.report-stats-row {
+    -fx-padding: 2 0 0 0;
+}
+
+.stat-card {
+    -fx-background-color: #ffffff;
+    -fx-border-color: rgba(60,163,76,0.35);
+    -fx-border-width: 1;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.10), 12, 0, 0, 5);
+}
+
+.stat-card-title {
+    -fx-text-fill: #667085;
+    -fx-font-weight: 800;
+    -fx-font-size: 13px;
+}
+
+.stat-card-value {
+    -fx-text-fill: #0b1220;
+    -fx-font-weight: 900;
+    -fx-font-size: 26px;
+}
+
+.report-table {
+    -fx-min-height: 240px;
+}
+
+.report-actions {
+    -fx-padding: 6 0 0 0;
+    -fx-alignment: center-right;
+}
+.page-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: 900;
+}
+
+.muted {
+    -fx-text-fill: #667085;
+    -fx-font-weight: 700;
+}
+
+.section-title {
+    -fx-font-weight: 800;
+}
+.page-title { -fx-font-size: 18px; -fx-font-weight: 900; }
+.muted { -fx-text-fill: #667085; -fx-font-weight: 700; }
+
+.dialog-pane .content { -fx-padding: 0; } /* laisse ton header respirer */
+
+
+
+.separator {
+    -fx-opacity: 0.35;
+}

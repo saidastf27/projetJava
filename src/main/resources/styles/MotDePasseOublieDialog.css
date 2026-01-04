@@ -1,0 +1,77 @@
+/* =======================
+   DIALOG STYLES
+   ======================= */
+.dialog-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #3CA34C;
+    -fx-border-width: 2;
+    -fx-padding: 20;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.dialog-pane .content {
+    -fx-background-color: #f9f9f9;
+    -fx-padding: 20;
+}
+
+/* =======================
+   TITRES ET TEXTES
+   ======================= */
+.text {
+    -fx-font-size: 14px;
+    -fx-fill: #333333;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3CA34C;
+}
+
+/* =======================
+   LABELS EMAILS
+   ======================= */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #007bff; /* bleu pour les emails */
+}
+
+/* =======================
+   CONTAINER EMAILS
+   ======================= */
+.vbox {
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 15px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #dee2e6;
+}
+
+/* =======================
+   BOUTONS
+   ======================= */
+.button {
+    -fx-background-color: #3CA34C;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-padding: 6 20 6 20;
+}
+
+.button:hover {
+    -fx-background-color: #36a03f;
+}
+
+.button:pressed {
+    -fx-background-color: #2d8133;
+}
+
+/* =======================
+   MESSAGE INFORMATIF
+   ======================= */
+.text-info {
+    -fx-font-size: 12px;
+    -fx-fill: #555555;
+}

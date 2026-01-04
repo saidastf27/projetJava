@@ -1,0 +1,114 @@
+/* =====================
+   Styles globaux pour tous les Dialogs
+   ===================== */
+
+/* DialogPane principal */
+.dialog-pane {
+    -fx-background-color: #ffffff;  /* fond blanc */
+    -fx-border-color: #3CA34C;      /* bordure verte */
+    -fx-border-width: 2;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+/* Header du dialog */
+.dialog-pane .header-panel {
+    -fx-background-color: #3CA34C;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 10 10 10;
+}
+
+/* Texte du header */
+.dialog-pane .content.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #000000;
+}
+
+/* GridPane à l'intérieur du Dialog */
+.dialog-pane .content {
+    -fx-background-color: #ffffff;
+    -fx-padding: 15px;
+}
+
+/* Labels */
+.label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #000000;
+}
+
+/* TextField, PasswordField, TextArea */
+.text-field, .password-field, .text-area, .spinner, .date-picker, .combo-box {
+    -fx-border-color: #3CA34C;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 5px;
+}
+
+/* Boutons OK / Cancel / Autres */
+.button {
+    -fx-background-color: #3CA34C;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 6 12 6 12;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #2d8235;
+}
+
+/* Boutons désactivés */
+.button:disabled {
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #666666;
+}
+
+/* ComboBox */
+.combo-box .list-cell {
+    -fx-padding: 4 8 4 8;
+}
+
+/* Spinner */
+.spinner {
+    -fx-padding: 0 0 0 5;
+}
+
+/* DatePicker */
+.date-picker .text-field {
+    -fx-padding: 3 5 3 5;
+}
+
+/* Validation erreurs */
+.text-field:focused:invalid,
+.password-field:focused:invalid,
+.text-area:focused:invalid,
+.combo-box:focused:invalid,
+.date-picker:focused:invalid {
+    -fx-border-color: red;
+    -fx-border-width: 2;
+}
+
+/* Alerts (Information, Warning, Error) */
+.alert {
+    -fx-font-family: "Arial", sans-serif;
+}
+
+.alert .header-panel {
+    -fx-font-weight: bold;
+}
+
+.alert .content.label {
+    -fx-font-size: 13px;
+}
+
+/* Couleur des boutons d'alerte */
+.alert .button {
+    -fx-background-color: #3CA34C;
+}
+
+.alert .button:hover {
+    -fx-background-color: #2d8235;
+}

@@ -1,0 +1,156 @@
+/* =======================
+   DIALOG STYLES
+   ======================= */
+.dialog-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #3CA34C;
+    -fx-border-width: 2;
+    -fx-padding: 20;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 14px;
+}
+
+.dialog-pane .content {
+    -fx-background-color: #f9f9f9;
+    -fx-padding: 10 20 20 20;
+}
+
+/* =======================
+   LABELS
+   ======================= */
+.label {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3CA34C;
+}
+
+/* =======================
+   TEXT FIELDS, PASSWORD FIELDS & TEXTAREA
+   ======================= */
+.text-field,
+.password-field,
+.text-area {
+    -fx-pref-width: 320px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 14px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 0 10px;
+}
+
+.text-area {
+    -fx-pref-height: 80px;
+}
+
+.text-field:focused,
+.password-field:focused,
+.text-area:focused {
+    -fx-border-color: #3CA34C;
+    -fx-border-width: 1.5;
+}
+
+.spinner {
+    -fx-pref-width: 150px;
+    -fx-font-size: 14px;
+}
+
+/* =======================
+   BUTTONS
+   ======================= */
+.button {
+    -fx-background-color: #3CA34C;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #36a03f;
+}
+
+.button:pressed {
+    -fx-background-color: #2d8133;
+}
+
+.button.secondary {
+    -fx-background-color: #2196F3;
+}
+
+.button.cancel-button {
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #333333;
+}
+
+.button.cancel-button:hover {
+    -fx-background-color: #b3b3b3;
+}
+
+/* =======================
+   LABEL CV Path
+   ======================= */
+.label-cv {
+    -fx-font-style: italic;
+    -fx-text-fill: #666666;
+}
+
+/* =======================
+   ALERTS STYLING
+   ======================= */
+.dialog-pane .alert {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #3CA34C;
+    -fx-border-width: 2;
+}
+
+.alert .header-panel .label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3CA34C;
+}
+
+.alert .content-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+/* =======================
+   COMBOBOX
+   ======================= */
+.combo-box {
+    -fx-font-size: 14px;
+}
+
+.combo-box .list-cell {
+    -fx-font-size: 14px;
+}
+
+/* =======================
+   SCROLLPANE
+   ======================= */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-pref-width: 10px;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #3CA34C;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #e6e6e6;
+}

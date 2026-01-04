@@ -1,0 +1,74 @@
+/* Styles généraux du Dialog */
+.dialog-pane {
+    -fx-background-color: #ffffff; /* fond blanc */
+    -fx-border-color: #3CA34C;     /* bordure verte */
+    -fx-border-width: 2px;
+    -fx-padding: 15;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Header du Dialog */
+.dialog-pane .header-panel {
+    -fx-background-color: #3CA34C; /* vert */
+    -fx-text-fill: #ffffff;         /* texte blanc */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 15 10 15;
+}
+
+/* Contenu du Dialog */
+.dialog-pane .content {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20;
+}
+
+/* GridPane à l'intérieur du Dialog */
+.grid-pane {
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+}
+
+/* Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+/* TextField, TextArea, ComboBox, DatePicker, Spinner */
+.text-field,
+.text-area,
+.combo-box,
+.date-picker,
+.spinner {
+    -fx-pref-width: 250px;
+    -fx-font-size: 13px;
+}
+
+/* TextArea spécifique */
+.text-area {
+    -fx-control-inner-background: #f9f9f9;
+}
+
+/* Boutons */
+.button {
+    -fx-background-color: #3CA34C;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6 20 6 20;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #2d8b3a; /* vert plus foncé au survol */
+}
+
+.button:disabled {
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #666666;
+}
+
+/* Alertes (Warning/Error) */
+.alert {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 13px;
+}
