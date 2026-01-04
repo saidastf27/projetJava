@@ -1,10 +1,4 @@
-/* =========================
-   THEME PRO FINAL (CLEAN + PRO)
-   White / Dark Green Gradient / #3CA34C
-   - Big "Bienvenue" only
-   - Global text professional
-   - Dropdown readable (black on white)
-   ========================= */
+
 
 /* ---------- Root ---------- */
 .root {
@@ -27,9 +21,6 @@
     -fx-background-color: transparent;
 }
 
-/* =========================
-   TYPOGRAPHY (PRO)
-   ========================= */
 .label {
     -fx-text-fill: #0b1220;
     -fx-font-size: 14px;
@@ -47,6 +38,7 @@
 .page-title {
     -fx-font-size: 19px;
     -fx-font-weight: 900;
+    -fx-text-fill: #0b1220;
 }
 
 .search-label {
@@ -67,9 +59,6 @@
     -fx-font-weight: 600;
 }
 
-/* =========================
-   BUTTONS (GREEN DEFAULT)
-   ========================= */
 .button {
     -fx-background-color: linear-gradient(to bottom, #3CA34C, #2E7D43);
     -fx-text-fill: white;
@@ -92,9 +81,6 @@
     -fx-background-color: linear-gradient(to bottom, #2E7D43, #256A39);
 }
 
-/* =========================
-   LOGOUT BUTTON (RED)
-   ========================= */
 .button.logout-button,
 .button.mc-style-10 {
     -fx-background-color: linear-gradient(to bottom, #e53935, #b71c1c);
@@ -109,9 +95,6 @@
     -fx-cursor: hand;
 }
 
-/* =========================
-   INPUTS
-   ========================= */
 .text-field, .password-field, .text-area, .combo-box, .date-picker {
     -fx-background-color: white;
     -fx-border-color: #d0d5dd;
@@ -146,9 +129,6 @@
     -fx-padding: 8 16;
 }
 
-/* =========================
-   MENU AS BUTTON
-   ========================= */
 .menu-bar {
     -fx-background-color: transparent;
 }
@@ -173,7 +153,6 @@
 
 /* =========================
    DROPDOWN MENU ITEMS (FIX)
-   Fond BLANC + texte NOIR
    ========================= */
 .menu-bar .context-menu {
     -fx-background-color: #ffffff;
@@ -210,6 +189,10 @@
    ========================= */
 .header-box {
     -fx-background-color: linear-gradient(to bottom, rgba(60,163,76,0.16), rgba(60,163,76,0.06));
+    -fx-border-color: rgba(60,163,76,0.20);
+    -fx-border-width: 1;
+    -fx-border-radius: 16;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.07), 12, 0, 0, 4);
     -fx-background-radius: 16;
     -fx-padding: 16;
 }
@@ -220,7 +203,10 @@
     -fx-border-width: 1;
     -fx-background-radius: 16;
     -fx-padding: 16;
+    -fx-border-radius: 16;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 14, 0, 0, 5);
 }
+
 
 /* =========================
    TABPANE
@@ -255,11 +241,15 @@
     -fx-background-color: white;
     -fx-border-color: #e5e7eb;
     -fx-border-radius: 16;
+    -fx-border-width: 1;
+    -fx-background-radius: 16;
     -fx-font-size: 13px;
 }
 
+
 .table-view .column-header-background {
     -fx-background-color: linear-gradient(to bottom, #6fd18a, #3CA34C);
+        -fx-background-radius: 16 16 0 0;
 }
 
 .table-view .column-header .label {
@@ -269,8 +259,11 @@
 }
 
 .table-cell {
-    -fx-padding: 8 10;
-}
+  -fx-text-fill: #0b1220;
+    -fx-font-weight: 650;
+    -fx-padding: 8 10;}
+
+
 
 /* =========================
    SCROLLBARS
@@ -288,11 +281,15 @@
    DIALOGS
    ========================= */
 .dialog-pane {
-    -fx-background-color: white;
-}
+  -fx-background-color: #ffffff;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-padding: 16;}
+
 
 .dialog-pane .header-panel {
-    -fx-background-color: linear-gradient(to bottom, #2E7D43, #256A39);
+    -fx-background-color: linear-gradient(to bottom, rgba(60,163,76,0.16), rgba(60,163,76,0.06));
+    -fx-padding: 14;
 }
 
 .dialog-pane .header-panel .label {
@@ -300,6 +297,11 @@
     -fx-font-weight: 900;
 }
 
+/*
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #0b1220;
+    -fx-font-weight: 900;
+}*/
 /* =========================
    STATUS PILLS
    ========================= */
@@ -336,7 +338,7 @@
 }
 
 /* =========================
-   ENTREPRISE ACTION BUTTONS
+   ACTION BUTTONS
    (Secondary green palette)
    ========================= */
 .button.btn-secondary {
@@ -466,24 +468,18 @@
     -fx-background-color: linear-gradient(to bottom, #86e0a0, #4BC45F);
 }
 
-/* =========================
-   DIALOG IMPROVEMENTS
-   ========================= */
 
 .mc-dialog {
     -fx-background-color: transparent;
 }
 
-.dialog-pane {
-    -fx-background-color: #ffffff;
-    -fx-background-radius: 16;
-    -fx-border-radius: 16;
-    -fx-padding: 16;
-}
+
 
 .dialog-pane .content {
     -fx-padding: 0;
+    -fx-background-color: transparent;
 }
+
 
 /* Bouton outline (Cancel) */
 .button.btn-outline {
@@ -495,6 +491,7 @@
     -fx-border-radius: 14;
     -fx-font-weight: 900;
 }
+
 
 .button.btn-outline:hover {
     -fx-background-color: rgba(60,163,76,0.10);
@@ -520,45 +517,7 @@
     -fx-background-color: linear-gradient(to bottom, #37b24d, #2f9e44);
 }
 
-/* Outline button (Cancel) */
-.button.btn-outline {
-    -fx-background-color: transparent;
-    -fx-text-fill: #0b1220;
-    -fx-border-color: rgba(11,18,32,0.22);
-    -fx-border-width: 1.4;
-    -fx-background-radius: 14;
-    -fx-border-radius: 14;
-    -fx-font-weight: 900;
-}
-.button.btn-outline:hover {
-    -fx-background-color: rgba(60,163,76,0.10);
-    -fx-border-color: rgba(60,163,76,0.55);
-}
-/* =========================================================
-   SEARCH DIALOG - UI PRO (à ajouter dans MainController.css)
-   Compatible avec ton thème vert (#3CA34C)
-   ========================================================= */
 
-/* ----- Dialog pane general ----- */
-.dialog-pane {
-    -fx-background-color: #ffffff;
-    -fx-padding: 12;
-}
-
-.dialog-pane .content {
-    -fx-background-color: transparent;
-}
-
-/* Header panel of dialog (si jamais utilisé) */
-.dialog-pane .header-panel {
-    -fx-background-color: linear-gradient(to bottom, rgba(60,163,76,0.16), rgba(60,163,76,0.06));
-    -fx-padding: 14;
-}
-
-.dialog-pane .header-panel .label {
-    -fx-text-fill: #0b1220;
-    -fx-font-weight: 900;
-}
 
 /* Buttons in dialog */
 .dialog-pane .button-bar .button {
@@ -567,37 +526,9 @@
     -fx-font-weight: 800;
 }
 
-/* ----- Card / Header-box used in dialog ----- */
-.card {
-    -fx-background-color: #ffffff;
-    -fx-border-color: #e5e7eb;
-    -fx-border-width: 1;
-    -fx-background-radius: 16;
-    -fx-border-radius: 16;
-    -fx-padding: 16;
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 14, 0, 0, 5);
-}
-
-.header-box {
-    -fx-background-color: linear-gradient(to bottom, rgba(60,163,76,0.16), rgba(60,163,76,0.06));
-    -fx-border-color: rgba(60,163,76,0.20);
-    -fx-border-width: 1;
-    -fx-background-radius: 16;
-    -fx-border-radius: 16;
-    -fx-padding: 14;
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.07), 12, 0, 0, 4);
-}
-
-/* ----- Typography helpers ----- */
-.page-title {
-    -fx-font-size: 20px;
-    -fx-font-weight: 900;
-    -fx-text-fill: #0b1220;
-}
-
 .muted {
     -fx-text-fill: #667085;
-    -fx-font-weight: 650;
+    -fx-font-weight: 700;
     -fx-font-size: 13px;
 }
 
@@ -639,21 +570,7 @@
     -fx-background-color: transparent;
 }
 
-/* ----- TableView inside dialog ----- */
-.table-view {
-    -fx-background-color: #ffffff;
-    -fx-border-color: #e5e7eb;
-    -fx-border-width: 1;
-    -fx-background-radius: 16;
-    -fx-border-radius: 16;
-    -fx-font-size: 13px;
-}
 
-/* Header background (lighter green) */
-.table-view .column-header-background {
-    -fx-background-color: linear-gradient(to bottom, #6fd18a, #3CA34C);
-    -fx-background-radius: 16 16 0 0;
-}
 
 /* Column titles BLACK */
 .table-view .column-header .label {
@@ -681,11 +598,6 @@
     -fx-background-color: rgba(60,163,76,0.22);
 }
 
-.table-cell {
-    -fx-text-fill: #0b1220;
-    -fx-font-weight: 650;
-    -fx-padding: 8 10;
-}
 
 /* Placeholder text (Aucun résultat...) */
 .table-view .placeholder .label {
@@ -740,25 +652,12 @@
     -fx-padding: 6 0 0 0;
     -fx-alignment: center-right;
 }
-.page-title {
-    -fx-font-size: 18px;
-    -fx-font-weight: 900;
-}
 
-.muted {
-    -fx-text-fill: #667085;
-    -fx-font-weight: 700;
-}
+
 
 .section-title {
     -fx-font-weight: 800;
 }
-.page-title { -fx-font-size: 18px; -fx-font-weight: 900; }
-.muted { -fx-text-fill: #667085; -fx-font-weight: 700; }
-
-.dialog-pane .content { -fx-padding: 0; } /* laisse ton header respirer */
-
-
 
 .separator {
     -fx-opacity: 0.35;
