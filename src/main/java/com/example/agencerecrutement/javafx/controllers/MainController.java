@@ -102,10 +102,7 @@ public class MainController {
         attachStylesheets(root);
     }
 
-    /**
-     * Attache la feuille de style globale à un Parent (Scene/Pane).
-     * Le CSS est chargé depuis: /styles/main_green.css
-     */
+  
     private void attachStylesheets(Parent parent) {
         try {
             String css = getClass().getResource("/styles/MainController.css").toExternalForm();
@@ -125,7 +122,7 @@ public class MainController {
     root.setPadding(new Insets(10));
     attachStylesheets(root);
 
-    // ✅ Créer la barre du haut (MenuBar + bouton logout à droite)
+    //  Créer la barre du haut (MenuBar + bouton logout à droite)
     javafx.scene.Node topBar = createMenuBar();
     root.setTop(topBar);
 
@@ -161,7 +158,7 @@ private javafx.scene.Node createMenuBar() {
     if (utilisateurConnecte.getRole() == Utilisateur.Role.ADMINISTRATEUR) {
 
         Menu menuAdmin = new Menu("Administration");
-        menuAdmin.getStyleClass().add("menu-button"); // ✅ (même style que Fichier)
+        menuAdmin.getStyleClass().add("menu-button"); 
 
         MenuItem itemGestionUsers = new MenuItem("Gérer les utilisateurs");
         MenuItem itemGestionJournaux = new MenuItem("Gérer les journaux");
@@ -179,7 +176,7 @@ private javafx.scene.Node createMenuBar() {
     } else if (utilisateurConnecte.getRole() == Utilisateur.Role.DEMANDEUR_EMPLOI) {
 
         Menu menuDemandeur = new Menu("Mes Documents");
-        menuDemandeur.getStyleClass().add("menu-button"); // ✅ important
+        menuDemandeur.getStyleClass().add("menu-button"); 
 
         MenuItem itemMesDocuments = new MenuItem("Gérer mes documents");
         MenuItem itemUploadCV = new MenuItem("Téléverser un CV");
@@ -193,7 +190,7 @@ private javafx.scene.Node createMenuBar() {
     } else if (utilisateurConnecte.getRole() == Utilisateur.Role.ENTREPRISE) {
 
         Menu menuEntreprise = new Menu("Recrutement");
-        menuEntreprise.getStyleClass().add("menu-button"); // ✅
+        menuEntreprise.getStyleClass().add("menu-button"); 
 
         MenuItem itemCandidats = new MenuItem("Voir les candidats");
         MenuItem itemMesRecrutements = new MenuItem("Mes recrutements");
@@ -205,9 +202,8 @@ private javafx.scene.Node createMenuBar() {
         menuBar.getMenus().add(menuEntreprise);
     }
 
-    // --- Bouton Déconnexion à droite (rouge) ---
     Button logoutButton = new Button("Déconnexion");
-    logoutButton.getStyleClass().addAll("mc-style-10", "logout-danger"); // ✅ rouge via CSS
+    logoutButton.getStyleClass().addAll("mc-style-10", "logout-danger"); 
     logoutButton.setOnAction(e -> {
         Stage stage = null;
         for (javafx.stage.Window window : javafx.stage.Window.getWindows()) {
@@ -228,7 +224,7 @@ private javafx.scene.Node createMenuBar() {
     navbar.setAlignment(javafx.geometry.Pos.CENTER_LEFT);
     navbar.setSpacing(10);
     navbar.setPadding(new Insets(6, 14, 6, 14));
-    navbar.getStyleClass().add("mc-navbar"); // optionnel (si tu veux un fond / padding)
+    navbar.getStyleClass().add("mc-navbar"); 
 
     // Bonus : MenuBar prend tout l'espace à gauche
     HBox.setHgrow(menuBar, Priority.NEVER);
@@ -244,7 +240,7 @@ private Pane createContentPane() {
     VBox content = new VBox(20);
     content.setPadding(new Insets(20));
 
-    // Header avec bienvenue (sans bouton déconnexion)
+    // Header avec bienvenue
     HBox headerBox = new HBox();
     headerBox.setSpacing(20);
     headerBox.setAlignment(javafx.geometry.Pos.CENTER);
@@ -344,6 +340,7 @@ private Pane createContentPane() {
         Tab tabMesCandidatures = new Tab("Mes candidatures");
         tabMesCandidatures.setContent(createMesCandidaturesTab());
         tabMesCandidatures.setClosable(false);
+
         Tab tabJournaux = new Tab("Journaux & éditions");
         tabJournaux.setContent(createJournauxPourDemandeurPane());
         tabJournaux.setClosable(false);
@@ -384,6 +381,7 @@ private Pane createContentPane() {
         
         return pane;
     }
+    //pour l'entreprise
     
   private Pane createOffresTab() {
     VBox pane = new VBox(10);

@@ -60,7 +60,7 @@ public class LoginController {
         this.applicationContext = applicationContext;
     }
 
-    // ✅ Initialisation après que Spring ait injecté tous les beans
+    // ✅ Initialisation apres que Spring ait injecté tous les beans
     @PostConstruct
     public void init() {
         initializeView();

@@ -258,6 +258,7 @@
     -fx-font-size: 13px;
 }
 
+
 .table-cell {
   -fx-text-fill: #0b1220;
     -fx-font-weight: 650;
@@ -572,12 +573,7 @@
 
 
 
-/* Column titles BLACK */
-.table-view .column-header .label {
-    -fx-text-fill: #0b1220;
-    -fx-font-weight: 900;
-    -fx-font-size: 13px;
-}
+
 
 /* Rows */
 .table-row-cell {
